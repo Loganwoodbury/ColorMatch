@@ -1,4 +1,4 @@
-.triadColors {
+.triadColors, .complementaryColors, .monoChromeColors, .analogousColors {
     display: flex;
     justify-content: center;
     
@@ -7,6 +7,8 @@
 #colorOne, #colorTwo, #colorThree {
     height: 100px;
     width: 80%;
+    border: 2px solid black;
+    margin: 10px;
 }
 
 button {

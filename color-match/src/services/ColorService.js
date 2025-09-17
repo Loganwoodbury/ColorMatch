@@ -15,5 +15,17 @@ export default {
 
     getTriadScheme(hexcode){
         return http.get(`scheme?hex=${hexcode}&mode=triad&count=3`)
+    },
+
+    getMonochromScheme(hexcode){
+        return http.get(`scheme?hex=${hexcode}&mode=monochrome&count=3`)
+    },
+
+    getAnalogicScheme(hexcode){
+        return http.get(`scheme?hex=${hexcode}&mode=analogic&count=3`)
+    },
+
+    getComplimentScheme(hexcode){
+        return http.get(`scheme?hex=${hexcode}&mode=complement`)
     }
 }
