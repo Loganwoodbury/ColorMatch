@@ -7,5 +7,13 @@ const http = axios.create({
 export default {
     colorLookupByRGB(r,g,b){
         return http.get(`/id?rgb=rgb(${r},${g},${b})`)
+    },
+
+    colorLoookupByHex(hexcode){
+        return http.get(`/id?hex=${hexcode}`)
+    },
+
+    getTriadScheme(hexcode){
+        return http.get(`scheme?hex=${hexcode}&mode=triad&count=3`)
     }
 }
